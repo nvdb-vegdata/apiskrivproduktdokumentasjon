@@ -4,7 +4,7 @@ sidebar_position: 1
 ---
 
 NVDB API Skriv eksponerer et sett med REST-baserte endepunkter for registrering og vedlikehold av data i
-[Nasjonal vegdatabank](om_nvdb.md) (NVDB). Sammen med [NVDB API Les](https://api.vegdata.no) utgjør disse endepunktene en
+[Nasjonal vegdatabank](om-nvdb) (NVDB). Sammen med [NVDB API Les](https://api.vegdata.no) utgjør disse endepunktene en
 komplett tjenesteportefølje for utviklere av fagsystemer som har behov for integrasjon med NVDB. APIene og NVDB eies og
 forvaltes av Statens vegvesen.
 
@@ -22,7 +22,7 @@ støtte-endepunkter for:
 * Endepunktene som representerer ressurser/entiteter følger designprinsippene til [Representational State Transfer (REST)](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm).
 * APIet er HTTP-basert. For å hente informasjon om en ressurs benyttes en GET-request. For å registrere eller oppdatere informasjon
 om en ressurs benyttes POST. Sistnevnte brukes også mot rene kommando-endepunkter. Responser vil ha en
-[HTTP-statuskode](feilhaandtering.md) som indikerer requestens korrekthet når det gjelder
+[HTTP-statuskode](feilhåndtering) som indikerer requestens korrekthet når det gjelder
 verb, URL, payload-format, tilgangskontroll m.m.  
 * Alle endepunkter støtter payloads både i [JSON](https://www.json.org/json-en.html) og [XML](https://www.w3.org/XML/)-format.
 En respons får samme format som requesten, med mindre noe annet er angitt med en ```Accept```-header.
@@ -33,9 +33,9 @@ En respons får samme format som requesten, med mindre noe annet er angitt med e
 * Alle requester skal ha følgende headere:
   * ```X-Client``` skal angi navnet på klienten som anroper APIet.
   * ```X-Request-ID``` skal angi en unik identifikator (UUID) for requesten. Denne gjenbrukes i eventuelle requester som NVDB API Skriv gjør til andre baksystemer.
-* Alle requester må inneholde et gyldig [autentiseringstoken](autentisering.md), enten i form av en cookie eller som en Authorization-header.
-* Brukeren må ha [relevante roller](tilgangskontroll.md#tilgang-til-endepunkter-og-ressurser) i Statens vegvesens LDAP-register.
-* Dersom brukeren skal registrere eller vedlikeholde data i NVDB, må hun være tildelt [datarettigheter](tilgangskontroll.md#datarettigheter) i NVDB API Skriv.
+* Alle requester må inneholde et gyldig [autentiseringstoken](autentisering), enten i form av en cookie eller som en Authorization-header.
+* Brukeren må ha [relevante roller](tilgangskontroll#tilgang-til-endepunkter-og-ressurser) i Statens vegvesens LDAP-register.
+* Dersom brukeren skal registrere eller vedlikeholde data i NVDB, må hun være tildelt [datarettigheter](tilgangskontroll#datarettigheter) i NVDB API Skriv.
 Datarettigheter gir tilgang til spesifikke geografiske områder, vegtyper og vegobjekttyper.
 
 ### Miljøer
@@ -44,6 +44,7 @@ NVDB API Skriv er tilgjengelig i tre ulike miljøer hos Statens vegvesen:
 
 Miljø|Formål|Basis-URL
 -|-|-
+UTV|Systemtesting|https://nvdbapiskriv.utv.atlas.vegvesen.no/
 STM|Systemtesting|https://nvdbapiskriv-stm.utv.atlas.vegvesen.no/
 ATM|Akseptansetesting|https://nvdbapiskriv.test.atlas.vegvesen.no/
 PROD|Produksjonsdrift|https://nvdbapiskriv.atlas.vegvesen.no/

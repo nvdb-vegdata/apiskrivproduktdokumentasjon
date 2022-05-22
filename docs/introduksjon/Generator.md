@@ -20,7 +20,7 @@ PROD|Produksjonsdrift|<https://nvdbapiskriv.atlas.vegvesen.no/generator>
 
 ### Test case
 
-Panelet til venstre viser en liste over forhåndsdefinerte test cases. Et test case består av et [endringssett](endringssett/introduksjon.md) og en samling suksesskriterier ([asserts](https://en.wikipedia.org/wiki/Assertion_(software_development)))
+Panelet til venstre viser en liste over forhåndsdefinerte test cases. Et test case består av et [endringssett](../endringssett/introduksjon) og en samling suksesskriterier ([asserts](https://en.wikipedia.org/wiki/Assertion_(software_development)))
 som beskriver forventet innhold i behandlingsresultatet etter at endringssettet har gått gjennom NVDB API Skriv.
 
 Listen kan filtreres ved å angi søkeord i redigeringsfeltet over. I tillegg kan man velge mellom XML- og JSON-format på endringssettene. NVDB API Skriv støtter fortsatt versjon 2 av endringssettformatet og dette kan aktiveres med en egen
@@ -29,7 +29,7 @@ nedtrekksmeny. Antall test case for versjon 2 er imidlertid betydelig mindre enn
 ### Kjøring
 
 Når et test case aktiveres ved å klikke på det, vises tilhørende endringssett til høyre i skjermbildet. Det kan nå sendes inn for behandling av NVDB API Skriv ved å klikke **Send**. Generator vil da utføre
-korrekt [arbeidsflyt](endringssett/introduksjon.md#samhandling-mellom-klient-og-api) ved å først registrere, deretter sende startkommando, så polle på framdriftskode og til slutt hente endelig status
+korrekt [arbeidsflyt](../endringssett/introduksjon#samhandling-mellom-klient-og-api) ved å først registrere, deretter sende startkommando, så polle på framdriftskode og til slutt hente endelig status
 med behandlingsresultat. De ulike request-respons-syklusene vises med egne paneler med blå overskrift. Til slutt matches eventuelle suksesskriterier mot behandlingsresultatet og utfallet av dette vises under siste
 request-respons-panel.
 

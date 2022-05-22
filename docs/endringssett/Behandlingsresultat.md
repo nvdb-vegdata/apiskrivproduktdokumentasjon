@@ -3,10 +3,10 @@ sidebar_label: 'Behandlingsresultat'
 sidebar_position: 3
 ---
 
-Et endringssett er ferdigbehandlet når det har [fremdriftskoden](introduksjon.md#koder-for-behandlingsfremdrift) ```UTFØRT``` (eventuelt ```UTFØRT_OG_ETTERBEHANDLET```) eller ```AVVIST```.
+Et endringssett er ferdigbehandlet når det har [fremdriftskoden](introduksjon#koder-for-behandlingsfremdrift) ```UTFØRT``` (eventuelt ```UTFØRT_OG_ETTERBEHANDLET```) eller ```AVVIST```.
 Uavhengig av om endringssettet ble effektuert eller ikke, vil endringssettets behandlingsresultat inneholde relevant informasjon for
 klienten. Behandlingsresultatet beskrives av ```<resultat>``` -elementet i Status-entiteten som leveres ved anrop endringssettets
-[statusendepunkt](api-referanse.md#hente-status-for-et-endringssett), for eksempel:
+[statusendepunkt](api-referanse#hente-status-for-et-endringssett), for eksempel:
 
 ```xml
 <status xmlns="http://nvdb.vegvesen.no/apiskriv/domain/changeset/v3">

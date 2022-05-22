@@ -20,5 +20,5 @@ For å angi et binærobjekt som egenskapsverdi i et vegobjekt benyttes elementet
 
 Attributtene til ```<binaer>``` angis slik:
  
-* ```ressursId``` : id'en mottatt fra [opplastingsendepunktet](api-referanse.md#laste-opp-binærdata)
+* ```ressursId``` : id'en mottatt fra [opplastingsendepunktet](api-referanse#laste-opp-binærdata)
 * ```format``` : media-type i henhold til [IANA](http://www.iana.org/assignments/media-types/media-types.xhtml)

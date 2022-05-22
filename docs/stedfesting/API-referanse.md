@@ -123,7 +123,7 @@ til vegnettet det er stedfestet på. Dette kan eventuelt brukes i klienter til �
 kart.
 
 Dersom vegobjektene ikke ble godkjent av valideringen vil eventuelle feil beskrives i responsen på samme måte som i 
-[behandlingsresultatet](../endringssett/behandlingsresultat.md) for endringssett.
+[behandlingsresultatet](../endringssett/behandlingsresultat) for endringssett.
 
 Uavhengig av om vegobjektene lot seg stedfeste eller ikke, vil HTTP-statuskode alltid være 200 OK.
  

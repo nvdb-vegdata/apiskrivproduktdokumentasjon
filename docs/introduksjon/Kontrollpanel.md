@@ -20,7 +20,7 @@ Ved å klikke på elementene i den horisontale menyen øverst i skjermbildet akt
 
 ### Endringssett
 
-I denne fanen vises en oversikt over registrerte [endringssett](endringssett/introduksjon.md). En bruker som bare har rollen [0_bruker_fagdata](tilgangskontroll.md#tilgang-til-endepunkter-og-ressurser) 
+I denne fanen vises en oversikt over registrerte [endringssett](../endringssett/introduksjon). En bruker som bare har rollen [0_bruker_fagdata](tilgangskontroll#tilgang-til-endepunkter-og-ressurser) 
 vil kun se egne endringssett i listen. Brukere med roller av høyere orden vil derimot se samtlige endringssett. Listen av endringssett kan filtreres på eier, klient, tidsrom
 for registrering og fremdriftskode. Dersom fremdriftskoden VENTER velges, kan man i tillegg velge venteårsak som filter. Tilsvarende, dersom man velger AVVIST som fremdriftskode
 kan man velge avvistårsak som filter.
@@ -30,7 +30,7 @@ som tillater kansellering vil det finnes en **Kanseller**-knapp. Tilsvarende, de
 
 ### Låser
 
-I denne fanen vises en oversikt over alle [låser](laaser/introduksjon.md) i NVDB. Samtlige låser vises for alle brukere uavhengig av hvilke roller man har. Listen av låser kan filtreres på eier, enten ved å angi brukernavn eller fullt navn.
+I denne fanen vises en oversikt over alle [låser](../låser/introduksjon) i NVDB. Samtlige låser vises for alle brukere uavhengig av hvilke roller man har. Listen av låser kan filtreres på eier, enten ved å angi brukernavn eller fullt navn.
 Lengst til venstre på hver linje i listen vises et slette-ikon, dersom brukeren har rettighet til å slette låsen. En bruker med rollen 0_bruker_fagdata, kan bare slette låser han/hun har etablert selv.
 En bruker med rollen 9_system_admin kan slette alle låser.
 
@@ -38,7 +38,7 @@ Ved å klikke ett av innslagene i listen får man en detaljvisning av den valgte
 
 ### Oppdrag
 
-I denne fanen vises en oversikt over alle [oppdrag](oppdrag_og_transaksjoner/introduksjon.md) (tasks) i NVDB. Samtlige oppdrag vises for alle brukere uavhengig av hvilke roller man har.
+I denne fanen vises en oversikt over alle [oppdrag](../oppdrag-og-transaksjoner/introduksjon) (tasks) i NVDB. Samtlige oppdrag vises for alle brukere uavhengig av hvilke roller man har.
 Listen av oppdrag kan filtreres på eier (enten ved å angi brukernavn eller fullt navn), tidsrom for registrering og tjenesteregel.
 Det er mulig å gå til egen side for søk direkte i transaksjon ved å klikke lenken *Søk i transaksjoner*.
 
@@ -58,7 +58,7 @@ derimot se statistikk fra samtlige endringssett. Listen kan filtreres på bruker
 
 ### Datarettigheter
 
-I denne fanen vises en oversikt over alle brukere i Statens vegvesen som har fått [datarettigheter](tilgangskontroll.md#datarettigheter) i NVDB API Skriv. Denne fanen er bare tilgjengelig for brukere med rollen 9_system_admin.
+I denne fanen vises en oversikt over alle brukere i Statens vegvesen som har fått [datarettigheter](tilgangskontroll#datarettigheter) i NVDB API Skriv. Denne fanen er bare tilgjengelig for brukere med rollen 9_system_admin.
 Listen kan filtrers på brukernavn eller for-/etternavn. Datarettighet for en ny vegvesen-bruker kan registreres ved å klikke **Ny bruker**. Man får da muligheten til å kopiere datarettighetene til en annen bruker.
 Lengst til venstre på hver linje i listen vises et slette-ikon for å slette alle datarettigheter for denne brukeren. Ved sletting fjernes ikke brukeren eller dennes roller fra Statens vegvesen sitt LDAP-register.
 

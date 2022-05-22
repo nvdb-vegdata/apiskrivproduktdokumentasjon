@@ -288,11 +288,11 @@ Content-Type: application/xml; charset=UTF-8
           </egenskap>
         </egenskaper>
         <gyldighetsperiode>
-          <startdato>2020-05-29</startdato>
+          <startdato>2022-05-29</startdato>
         </gyldighetsperiode>
       </vegobjekt>
     </vegobjekter>
   </registrer>
-  <datakatalogversjon>2.20</datakatalogversjon>
+  <datakatalogversjon>2.29</datakatalogversjon>
 </endringssett>
 ```

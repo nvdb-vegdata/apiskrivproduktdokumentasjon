@@ -440,7 +440,7 @@ Content-Type: application/xml; charset=UTF-8
 
 Gir informasjon om fremdriften av behandlingen av et endringssett i form av en fremdriftskode. Brukes til hyppig
 monitorering (polling) av et endringssett under behandling. Klienter må avpasse pollefrekvensen i tråd med
-[anbefalt nøkkel](introduksjon.html#hvor-ofte-skal-klienten-polle).
+[anbefalt nøkkel](./introduksjon#hvor-ofte-skal-klienten-polle).
 
 #### Mønster
 
@@ -497,7 +497,7 @@ Content-Type: application/xml; charset=UTF-8
 ### Hente fremdrifts- og årsakskoden for et endringssett
 
 Samme som over, men gir i tillegg med venteårsak dersom fremdriftskoden er VENTER og avvistårsak når fremdriftskoden er AVVIST.
-Klienter må avpasse pollefrekvensen i tråd med [anbefalt nøkkel](introduksjon.html#hvor-ofte-skal-klienten-polle).
+Klienter må avpasse pollefrekvensen i tråd med [anbefalt nøkkel](introduksjon#hvor-ofte-skal-klienten-polle).
 
 #### Mønster
 

@@ -703,7 +703,7 @@ Attributten ```ressursId``` skal angi unik id for et binært objekt som er laste
 
 Attributten ```format``` skal angi [media-type](http://www.iana.org/assignments/media-types/media-types.xhtml) for binærobjektet.
 
-Opplasting av binære objekter er beskrevet i [egen seksjon](../binaere_objekter/introduksjon.md).
+Opplasting av binære objekter er beskrevet i [egen seksjon](../binære-objekter/introduksjon).
 
 #### Geometri
 
@@ -1008,7 +1008,7 @@ etter lesing av vegobjektet fra NVDB API Les må derfor klienten innhente
 tidspunktet for siste indekserte transaksjon for vegobjektet via endepunktet [https://www.vegvesen.no/nvdb/api/v3/status](https://www.vegvesen.no/nvdb/api/v3/status).
 
 Klienter som gjør korrigeringer/overskrivinger på en vegobjektversjon i flere runder
-(uten å lese det på nytt fra NVDB API Les) kan bruke tidspunktet angitt under ```<transaksjon>``` i [status-responsen](api-referanse.md#hente-status-for-et-endringssett)
+(uten å lese det på nytt fra NVDB API Les) kan bruke tidspunktet angitt under ```<transaksjon>``` i [status-responsen](api-referanse#hente-status-for-et-endringssett)
 for siste godkjente og utførte endringssett der vegobjektet ble korrigert/overskrevet. 
 
 Tidspunktet angitt i dette direktivet brukes for å unngå [race condition](https://en.wikipedia.org/wiki/Race_condition#Software).
@@ -1029,5 +1029,5 @@ med det nye/endrede vegobjektet. Direktivet er valgfritt og standardinnstilling 
 Subelementet ```<reduserPunkttetthet>``` brukes ved registrering, korrigering eller oppdatering. NVDB API Skriv vil normalt
 avvise for tette punkter i geometriegenskaper. Ved å angi ```JA``` for dette direktivet vil punkter som er for tette opp til
 nabopunkter bli fjernet automatisk. Hvor tette to nabopunkter tillates å være reguleres av valideringsinnstillinger i 
-NVDB API Skriv sitt [kontrollpanel](../kontrollpanel.md). Dersom punktreduksjon utføres varsles dette med notabene i endringssettets [behandlingsresultat](behandlingsresultat.md).
+NVDB API Skriv sitt [kontrollpanel](../introduksjon/kontrollpanel). Dersom punktreduksjon utføres varsles dette med notabene i endringssettets [behandlingsresultat](behandlingsresultat).
 Direktivet er valgfritt og standardinnstilling er ```NEI```.

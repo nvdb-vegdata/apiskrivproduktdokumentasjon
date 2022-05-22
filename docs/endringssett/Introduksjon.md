@@ -66,12 +66,12 @@ GET-request til /nvdb/apiskriv/rest/v3/endringssett/{id}/status.
 og inneholder registrering av nye vegobjekter vil status inneholde de tildelte id'ene for disse vegobjektene i NVDB. APIet responderer med innhentet
 status-informasjon.
 
-Forløpet demonstreres grafisk i NVDB API Skriv sin innebygde testklient, [Generator](../generator.md). Velg f.eks. test case 1 og klikk **Send** for å initiere
+Forløpet demonstreres grafisk i NVDB API Skriv sin innebygde testklient, [Generator](../introduksjon/generator). Velg f.eks. test case 1 og klikk **Send** for å initiere
 samme forløp som i sekvensdiagrammet over. 
 
 Arbeidsflytens kompleksitet krever at klienter som integrerer med NVDB API Skriv må realisere en form for porteføljeovervåking som gjør det enkelt
 for brukeren å følge med på behandlingen av sine endringssett og inspisere behandingsresultatet dersom noen ble avvist. I sin enkleste form
-kan en slik porteføljeovervåking realiseres som en lenke til endringssettet i NVDB API Skriv sitt [Kontrollpanel](../kontrollpanel.md):
+kan en slik porteføljeovervåking realiseres som en lenke til endringssettet i NVDB API Skriv sitt [Kontrollpanel](../introduksjon/kontrollpanel):
 /nvdb/apiskriv/kontrollpanel/#/jobs/view/{id}
 
 ### Koder for behandlingsfremdrift
